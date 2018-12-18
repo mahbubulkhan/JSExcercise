@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script>
+   
+   let arr = [];
+    
+    while(true)
+    {
+      let value = prompt("Enter a number:",0); 
+      if(value === ""|| value === null || !isFinite(value)) 
+          break;
+      arr.push(+value);
+    }
+    alert(arr);
+    let sum = 0;
+    for(let i of arr)
+        sum += i;
+    alert(sum);
+
+</script>
+</body>
+</html>

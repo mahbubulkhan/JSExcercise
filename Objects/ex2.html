@@ -1,0 +1,24 @@
+<html>
+<body>
+  <script type="text/javascript">
+    function isEmpty(obj) {
+      for (let key in obj) {
+        // if the loop has started, there is a prorty
+        return false;
+      }
+      return true;
+    }
+
+    alert(true);
+    let schedule = {};
+
+    alert( isEmpty(schedule) ); // true
+
+    schedule["8:30"] = "get up";
+    alert(schedule["8:30"]);
+
+    alert( isEmpty(schedule) );
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+     function copySorted(arr)
+     {
+       let newArr = arr.slice();
+       return newArr.reverse();
+     }
+
+      let arr = ["HTML", "JavaScript", "CSS"];
+
+      let sorted = copySorted(arr);
+
+      alert( sorted ); // CSS, HTML, JavaScript
+      alert( arr );
+    </script>
+
+  </body>
+</html>

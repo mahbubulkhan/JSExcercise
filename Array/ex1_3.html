@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function filterRangeInPlace(arr,startRange,endRange)
+      {
+        for(let i = 0;i < arr.length;i++)
+        {
+          let a = arr[i];
+          if(a < startRange || a > endRange)
+          {
+            arr.splice(i,1);
+            i--;
+          }
+        }
+      }
+
+      let arr = [5, 3, 8, 1];
+
+      filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
+
+      alert( arr ); // [3, 1]
+
+    </script>
+
+  </body>
+</html>

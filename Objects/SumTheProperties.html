@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script>
+	let salaries = {
+  			"John": 100,
+  			"Pete": 300,
+  			"Mary": 250
+		};
+
+	alert(sumSalaries(salaries));
+
+	function sumSalaries(salaries)
+	{
+		let total = 0;
+		for(let value of Object.values(salaries))
+		    {
+		    	total += value;
+		    }
+		return total;
+	}
+	
+
+</script>
+
+</body>
+</html>
