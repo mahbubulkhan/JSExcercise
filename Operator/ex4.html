@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    let login = prompt('Enter user name','Admin');
+     if(login == "Admin")
+     {
+        let password = prompt("Enter password");
+        if(password == "TheMaster")
+           alert("Welcome");
+        else if(!password && password.trim().length == 0)
+           alert("Cancelled");
+        else
+           alert("Wrong password");
+     }
+     else if(!login && login.trim().length == 0)
+          alert("Cancelled");
+     else
+         alert("I dont know you");
+  </script>
+</body>
+</html>
