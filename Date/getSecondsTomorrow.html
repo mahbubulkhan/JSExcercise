@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script type="text/javascript">
+	
+	
+	alert(getSecondsToday());
+
+	function getSecondsToday()
+	{
+			let date = new Date();
+			let dateTomorrow = new Date(date.getFullYear(),date.getMonth(),date.getDate()+1);
+			//alert(dateToday);
+			let current_time = new Date();
+			return Math.round((dateTomorrow.getTime() - current_time.getTime())/1000);
+	}
+
+</script>
+
+</body>
+</html>
